@@ -9,6 +9,11 @@ function App() {
       <p>
         <Button el="button">A Button</Button>
       </p>
+      <p>
+        <Button el="anchor" href="https://www.google.com" target="_blank">
+          A Link
+        </Button>
+      </p>
     </main>
   );
 }

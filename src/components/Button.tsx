@@ -8,9 +8,17 @@ type AnchorProps = {
 
 const Button = (props: ButtonProps | AnchorProps) => {
   if (props.el === "anchor") {
-    return <a {...props}>Click me</a>;
+    return (
+      <a className="button" {...props}>
+        A Link
+      </a>
+    );
   }
-  return <button {...props}>Click me</button>;
+  return (
+    <button className="button" {...props}>
+      Click me
+    </button>
+  );
 };
 
 export default Button;
